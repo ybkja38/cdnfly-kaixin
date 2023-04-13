@@ -2,7 +2,7 @@
 仅支持CENTOS7
 web目录为云端验证文件，请自行搭建
 
-wget https://raw.githubusercontent.com/Steady-WJ/cdnfly-kaixin/main/web/web.tar.gz
+wget https://raw.githubusercontent.com/ybkja38/cdnfly-kaixin/main/web/web.tar.gz
 
 tar -zxvf web.tar.gz
 
@@ -18,11 +18,11 @@ nano /etc/hosts
 
 v5.1.13主控
 
-curl -fsSL https://github.com/Steady-WJ/cdnfly-kaixin/raw/main/master.sh -o master.sh && chmod +x master.sh && ./master.sh --es-dir /home/es
+curl -fsSL https://github.com/ybkja38/cdnfly-kaixin/raw/main/master.sh -o master.sh && chmod +x master.sh && ./master.sh --es-dir /home/es
 
 v5.1.16被控
 
-curl -fsSL https://github.com/Steady-WJ/cdnfly-kaixin/raw/main/agent.sh -o agent.sh  && chmod +x agent.sh && ./agent.sh --master-ver v5.1.13 --master-ip  --es-ip  --es-pwd 
+curl -fsSL https://github.com/ybkja38/cdnfly-kaixin/raw/main/agent.sh -o agent.sh  && chmod +x agent.sh && ./agent.sh --master-ver v5.1.13 --master-ip  --es-ip  --es-pwd 
 
 
 
